@@ -8,7 +8,7 @@ genai.configure(api_key=key)
 
 # Streamlit UI setup
 st.title("🤖 An AI Code Reviewer")
-st.subheader("Enter your Python code below:")
+st.subheader("Enter your Code below:")
 
 # Text area for user to input Python code
 user_code = st.text_area("", height=200, placeholder="Enter your Python code here...")
@@ -22,7 +22,7 @@ if st.button("Generate"):
                 prompt = (
                     """You are an experienced code reviewer specializing in clean, efficient, and error-free code. 
                     Analyze the following code and provide a detailed review, including:
-                    Identification of any bugs, logical errors, or syntax issues.
+                    identification of the language, Identification of any bugs, logical errors, or syntax issues.
                     Suggestions for performance improvements or best practices.
                     Corrected code snippets with clear explanations for each suggested fix.
                     Please ensure your feedback is concise, actionable, and easy to understand.\n\n"""
