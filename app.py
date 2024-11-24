@@ -20,9 +20,12 @@ if st.button("Generate"):
             try:
                 # Prepare the prompt
                 prompt = (
-                    "You are a code review assistant. Review the following code "
-                    "and identify any bugs, issues, or areas for improvement. "
-                    "Also suggest corrected code snippets.\n\n"
+                    """You are an experienced code reviewer specializing in clean, efficient, and error-free code. 
+                    Analyze the following code and provide a detailed review, including:
+                    Identification of any bugs, logical errors, or syntax issues.
+                    Suggestions for performance improvements or best practices.
+                    Corrected code snippets with clear explanations for each suggested fix.
+                    Please ensure your feedback is concise, actionable, and easy to understand.\n\n"""
                     f"Code:\n{user_code}"
                 )
 
